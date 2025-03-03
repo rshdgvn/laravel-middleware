@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Student View</h1>
-    <h2>Hello {{ $student->name }} welcome to the student page </h2>
+    <h2>Welcome to the student page </h2>
 </body>
 </html>

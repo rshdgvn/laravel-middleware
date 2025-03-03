@@ -11,7 +11,11 @@ Route::get('/', function () {
 
 Route::get('/admin', function () {
     return view('admin');
-})->middleware('role:admin');
+})->middleware('checkrole:admin');
+
+Route::get('/student', function () {
+    return view('student');
+})->middleware('checkrole:student');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

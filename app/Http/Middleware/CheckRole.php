@@ -22,12 +22,13 @@ class CheckRole
         }
         else
         {
-            if ($role == 'student')
-            {
-                dd('you are a student');
+            if ($role === 'admin'){
+                return $this($request);
+            }elseif ($role == 'student'){
+                return $this($request);
             }
         }
 
-        return $this($request);
+        return abort(404);
     }
 }

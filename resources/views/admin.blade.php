@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    Youre in admin page
+    <h1>You are in admin page</h1>
+    
 </body>
 </html>
